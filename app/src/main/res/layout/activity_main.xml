@@ -35,20 +35,32 @@
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
 
                     <TextView
-                        android:layout_width="fill_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="Agregar contactos"
                         android:id="@+id/textView"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:textSize="25dp" />
+                        android:textSize="25dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:id="@+id/imageView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/contacto"
+                        android:onClick="onImgClick"/>
 
                     <EditText
                         android:layout_width="fill_parent"
@@ -61,7 +73,7 @@
                         android:hint="Nombre del contacto:"
                         android:layout_below="@+id/textView"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="25dp" />
+                        android:layout_marginTop="10dp" />
 
                     <EditText
                         android:layout_width="fill_parent"
@@ -70,7 +82,7 @@
                         android:ems="10"
                         android:id="@+id/txtTelefono"
                         android:hint="Telefono:"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="10dp"
                         android:layout_below="@+id/txtNombre"
                         android:layout_alignParentStart="true"
                         android:layout_marginLeft="15dp"
@@ -86,7 +98,7 @@
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
                         android:layout_below="@+id/txtTelefono"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="10dp"
                         android:layout_alignParentStart="true" />
 
                     <EditText
@@ -94,22 +106,22 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/txtDireccion"
                         android:hint="Dirección:"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginRight="15dp"
                         android:layout_marginLeft="15dp"
                         android:layout_below="@+id/txtEmail"
                         android:layout_centerHorizontal="true" />
 
                     <Button
-                        android:layout_width="200dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Agregar contacto"
                         android:id="@+id/btnAgregar"
                         android:onClick="onClick"
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginLeft="70dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
